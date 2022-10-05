@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>     
 </head>
-<body class="h-auto w-full bg-black">
-    <div class="grid grid-cols-10 justify-evenly">
+<body class=" h-auto w-full bg-black">
+    <div class="md:grid md:grid-cols-10 flex flex-col justify-evenly">
         <!---left side-->
-        <div class="bg-pink-300 col-span-2 h-auto w-full  m-8 p-8">
+        <div class="flex flex-col bg-pink-300 col-span-2 h-auto w-full  m-8 p-8">
             <div class="p-2">
                 <img class="rounded-full" src="./assets/images/ebalin_profile_pic.JPG">
             </div>
@@ -63,19 +63,19 @@
             
 
 
-        </div>       
-
+        </div>   
         <!------Right side-->
-        <div class="bg-gray-300 col-start-3 col-span-10 h-auto m-8 p-8">
+        <div class="flex flex-col   bg-gray-300 col-start-3 col-span-10 h-auto m-8 p-8">
             <div class="m-2">
                 
                     <h2 class="text-3xl font-bold">Profile</h2>
                     <p>A software engineering graduate seeking to find the opportunity to work in a challenging environment that will encourage me to improve and learn new skills.</p>
                 
             </div>
-            <div class="m-2">                
-                <div class="flex space-x-5 items-center">
-                    <h2 class="font-bold text-3xl">Past Work Experience:</h2>
+            <div class="m-2">  
+                <h2 class="font-bold text-3xl">Past Work Experience:</h2>              
+                <div class="md:flex md:flex-row flex flex-col  items-center">
+                    
                      <!--Company1 info-->
                     <div class="m-2">                   
                         <h5>August 2008 – April 2010</h5>                       
@@ -92,12 +92,11 @@
             </div>
 
                  
-               
-             <div class="m-2 flex space-x-5">
-                <h2 class="font-bold text-3xl">Current Learning Skills :</h2>
-                    <div class="p-8">
-                        <!-- <h4>VB,MS Access</h4>
-                        <h4>VB.net,SQL</h4>--->
+            <h2 class="font-bold text-3xl">Software Skills :</h2> 
+            <div class="m-2 flex space-x-5">                
+                    <div class="p-2">
+                        <h4>VB,MS Access</h4>
+                        <h4>VB.net,SQL</h4>
                         <h4>Javascript</h4>
                         <h4>HTML,CSS,tailwind CSS</h4>
                     </div>
@@ -106,7 +105,7 @@
             <!---------Projects -->
             <h2 class="font-bold text-3xl">Boot Camp Projects: Javascript Basics,HTML and CSS </h2>
             <h2 class="font-bold text-xl">Level 1 Projects:</h2>
-            <div class="grid grid-cols-5 gap-5 overflow-x-auto   ">
+            <div class="grid md:grid-cols-5 grid-cols-1 gap-5 overflow-x-auto   ">
                 <div class="bg-gray-400  p-2 rounded-lg border-solid divide-y divide-slate-200 "> 
                     <div class="">
                         <img onclick="window.open('https://ebalin1411.github.io/Math-Operations/')"  class="max-w-full h-auto rounded-lg cursor-pointer" src="./assets/images/jsMathApplicationImage.jpg" alt="Project1">
@@ -155,7 +154,7 @@
             </div>
                 
                 <h2 class="font-bold text-xl p-2">Level 2 Projects: Javascript core concepts and Tailwind CSS</h2>        
-                <div class="grid grid-cols-5 gap-5 overflow-x-auto ">
+                <div class="grid md:grid-cols-5 grid-cols-1 gap-5 overflow-x-auto ">
                     <div class="bg-gray-400  p-2 rounded-lg border-solid divide-y divide-slate-200 "> 
                         <div class="">
                             <img class="cursor-pointer" onclick="window.open('https://ebalin1411.github.io/know_your_thirukural/')"  class="max-w-full h-auto rounded-lg cursor-pointer" src="./assets/images/thiruvalluvar.jpg" alt="Project1">
@@ -192,12 +191,12 @@
                     
                     <div class="bg-gray-400  p-2 rounded-lg border-solid divide-y divide-slate-200 "> 
                         <div class="">
-                            <img onclick="window.open('https://ebalin1411.github.io/Math-Operations/')"  class="max-w-full h-auto rounded-lg cursor-pointer" src="./assets/images/weather.png" alt="Project1">
+                            <img onclick="window.open('https://ebalin1411.github.io/weather_application/')"  class="max-w-full h-auto rounded-lg cursor-pointer" src="./assets/images/weather.png" alt="Project1">
                             <p>Fetching Weather Information and reading JSON using javascript</p>
                         </div>
                         <div class="flex space-x-5 p-2 ">
                             <h1 class="font-bold">API and JSON</h1>
-                            <span class="cursor-pointer" onclick="window.open('https://github.com/Ebalin1411/Math-Operations.git/')" class="icon"><i class="fa fa-lg  fa-github-square" aria-hidden="true"></i></span>
+                            <span class="cursor-pointer" onclick="window.open('https://github.com/Ebalin1411/weather_application')" class="icon"><i class="fa fa-lg  fa-github-square" aria-hidden="true"></i></span>
                         </div>
                     </div>
 
@@ -214,15 +213,6 @@
                     </div>
     
                 </div>
-
-
-               
-                
-
-            
-
-            
-            
         </div>
     </div>
 
